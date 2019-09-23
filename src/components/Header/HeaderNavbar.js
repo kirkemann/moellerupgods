@@ -49,7 +49,7 @@ const HeaderNavbar = () => {
           <NavLink className="dropdown-item" href="/">Fest på Møllerup Gods</NavLink>
           <NavLink className="dropdown-item" href="/">Møder</NavLink>
           <NavLink className="dropdown-item" href="/">Oplevelser</NavLink>
-          <NavLink className="dropdown-item" href="/">Oplevelser</NavLink>
+          <NavLink className="dropdown-item" href="/">Rundvisninger</NavLink>
         </div>
       </li>
       <li className="nav-item">

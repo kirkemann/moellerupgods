@@ -9,6 +9,15 @@ function App() {
       <main className="App container">
         <Header />
         <Route exact path="/" component={Home} />
+        <Route path="/velkommen" component={Home} />
+
+              <Route path="/jagt" component={Home} />
+              <Route path="/hestpension" component={Home} />
+              <Route path="/lej_kontor" component={Home} />
+              <Route path="/lej_bolig" component={Home} />
+              <Route path="/mollerup_bogen" component={Home} />
+              <Route path="/hampefro_til_udsaed" component={Home} />
+
         <Route path="/verdensballetten" component={Home} />
 
               <Route path="/verdensballetten_erhver" component={Home} />
