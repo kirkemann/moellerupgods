@@ -13,7 +13,7 @@ const NyhedStor = () => {
                     <div className="products col-12">
                     {nyheder.map(n => {
                         return ( 
-                            <div className="text-left">
+                            <div key={n.id} className="text-left">
                                 <img className="img-fluid w-100 pb-2" src={"/img/" + n.nyhed} alt="sko"/>
                                 <h5>{n.overskrift}</h5>
                                 <p> {n.producttext} </p>

@@ -29,7 +29,7 @@ const Aktiviteter = () => {
                         <div className="row">
                     {aktivite.map(n => {
                         return ( 
-                            <div className="col-12 col-lg-4 col-md-6">
+                            <div key={n.id} className="col-12 col-lg-4 col-md-6">
                                 <img className="img-fluid w-100" src={"/img/" + n.aktiv} alt="aktivite"/>
                                 <h5>{n.overskrift}</h5>
                                 <p> {n.producttext} </p>
