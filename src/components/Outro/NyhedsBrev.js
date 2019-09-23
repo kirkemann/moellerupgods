@@ -2,41 +2,41 @@ import React from 'react'
 
 const NyhedsBrev = () => {
     return ( 
-        <div className="container">
+       
             
-                <div className="col-3">
+                <div className="col-12 col-lg-3 nyhedcolor">
                 <div className="textnyheds mt-3"><h5>Tilmeld nyhedsbrev</h5></div>
                     <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Email address</label>
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Fornavn</label>
-                            <input type="text" class="form-control" id="exampleInputText" />
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Fornavn</label>
+                            <input type="text" className="form-control" id="exampleInputText" />
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Fornavn</label>
-                            <input type="text" class="form-control" id="exampleInputText2"  />
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Fornavn</label>
+                            <input type="text" className="form-control" id="exampleInputText2"  />
                         </div>
                         
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                            <label class="form-check-label" for="exampleCheck1">Møllerup - alle</label>
+                        <div className="form-group form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                            <label className="form-check-label" htmlFor="exampleCheck1">Møllerup - alle</label>
                         </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2" />
-                            <label class="form-check-label" for="exampleCheck1">Verdensballetten</label>
+                        <div className="form-group form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck2" />
+                            <label className="form-check-label" htmlFor="exampleCheck1">Verdensballetten</label>
                         </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck3" />
-                            <label class="form-check-label" for="exampleCheck1">Møllerup Hamp</label>
+                        <div className="form-group form-check">
+                            <input type="checkbox" className="form-check-input" id="exampleCheck3" />
+                            <label className="form-check-label" htmlFor="exampleCheck1">Møllerup Hamp</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Telmeld</button>
+                        <button type="submit" className="btn btn-primary mb-3">Telmeld</button>
                     </form>
                 </div>
             
-        </div>
+        
      );
 }
  

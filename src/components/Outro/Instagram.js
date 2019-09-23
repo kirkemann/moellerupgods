@@ -3,9 +3,9 @@ import InstagramEmbed from 'react-instagram-embed';
 
 const Instagram = () => {
     return ( 
-        <div className="container">
+        
             
-                <div className="col-9 mt-4">
+                <div className="col-12 col-lg-9 mt-4">
                 <InstagramEmbed url='https://www.instagram.com/p/BUZDt1Ilwc8/?utm_source=ig_embed'
         maxWidth={600}
         hideCaption={true}
@@ -22,7 +22,7 @@ const Instagram = () => {
 
                 </div>
            
-        </div>
+        
      );
 }
  

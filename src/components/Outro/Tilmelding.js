@@ -5,8 +5,10 @@ import NyhedsBrev from './NyhedsBrev';
 const Tilmelding = () => {
     return ( 
         <div className="container">
-            <Instagram />
-            <NyhedsBrev />
+            <div className="row">
+                <Instagram />
+                <NyhedsBrev />
+            </div>
         </div>
      );
 }

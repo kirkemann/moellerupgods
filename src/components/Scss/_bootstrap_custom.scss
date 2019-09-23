@@ -1,0 +1,16 @@
+// Eget style/theming som skal overrider BS
+
+$primary: #e4e4e4;
+$secondary: #666;
+$danger: #666;
+
+
+
+
+// import af BS - EFTER eget "override"
+// Hent ALT
+@import "bootstrap/scss/bootstrap.scss";
+
+
+
+
