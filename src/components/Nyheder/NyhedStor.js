@@ -15,7 +15,7 @@ const NyhedStor = () => {
                         return ( 
                             <div key={n.id} className="text-left">
                                 <img className="img-fluid w-100 pb-2" src={"/img/" + n.nyhed} alt="sko"/>
-                                <h5>{n.overskrift}</h5>
+                                <h4>{n.overskrift}</h4>
                                 <p> {n.producttext} </p>
                             </div>
                          );

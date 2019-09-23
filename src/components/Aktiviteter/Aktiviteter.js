@@ -31,7 +31,7 @@ const Aktiviteter = () => {
                         return ( 
                             <div key={n.id} className="col-12 col-lg-4 col-md-6">
                                 <img className="img-fluid w-100" src={"/img/" + n.aktiv} alt="aktivite"/>
-                                <h5>{n.overskrift}</h5>
+                                <h4>{n.overskrift}</h4>
                                 <p> {n.producttext} </p>
                             </div>
                          );

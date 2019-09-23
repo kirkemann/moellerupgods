@@ -20,7 +20,7 @@ const NyhederLille = () => {
                         return ( 
                             <div key={n.id} className="text-left col-12 col-lg-4 col-md-6">
                                 <img className="img-fluid" src={"/img/" + n.nyhed} alt="sko"/>
-                                <h5>{n.overskrift}</h5>
+                                <h4>{n.overskrift}</h4>
                                 <p> {n.producttext} </p>
                             </div>
                          );
