@@ -18,7 +18,7 @@ const NyhederLille = () => {
                         <div className="row">
                     {nyheder.map(n => {
                         return ( 
-                            <div className="text-left col-4">
+                            <div className="text-left col-12 col-lg-4 col-md-6">
                                 <img className="img-fluid" src={"/img/" + n.nyhed} alt="sko"/>
                                 <h5>{n.overskrift}</h5>
                                 <p> {n.producttext} </p>

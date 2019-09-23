@@ -1,13 +1,16 @@
 import React from 'react'
 import Dkcside from './Dkc';
-import Instagram from './Instagram';
+import Tilmelding from './Tilmelding';
+
 
 
 const Outro = () => {
     return ( 
         <div className="container">
+            <div className="row">
             <Dkcside />
-            <Instagram />
+            <Tilmelding />
+        </div>
         </div>
      );
 }
