@@ -5,18 +5,21 @@ const NyhedsBrev = () => {
        
             
                 <div className="col-12 col-lg-3 nyhedcolor">
-                <div className="textnyheds mt-3"><h5>Tilmeld nyhedsbrev</h5></div>
+                    <div className="textnyheds mt-3">
+                        <h5>Tilmeld nyhedsbrev</h5>
+                        <p className="text-right" ><span>*</span>skal udfyldes</p>
+                    </div>
                     <form>
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Email address</label>
+                            <label htmlFor="exampleInputEmail1">Email address <span>*</span></label>
                             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Fornavn</label>
+                            <label htmlFor="exampleInputText1">Fornavn</label>
                             <input type="text" className="form-control" id="exampleInputText" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Fornavn</label>
+                            <label htmlFor="exampleInputText2">Efternavn</label>
                             <input type="text" className="form-control" id="exampleInputText2"  />
                         </div>
                         
