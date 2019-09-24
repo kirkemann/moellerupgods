@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import {NavLink} from 'react-router-dom';
 
 const NyhederLille = () => {
 
     const [nyheder]= useState([
        
-        {nyhed: 'cover_nyhed_hampeprodukter.jpg', overskrift: 'Køb vores hampeprodukter', producttext: 'På Møllerup Gods arbejder vi med hamp og hampens unikke ernæringsmæssige egenskaber. Alt vores hamp er dyrket i Danmark, og resultatet er en række gode produkter, som kan købe her på webshoppen. ', id: 1},
-        {nyhed: 'cover_nyhed_verdensballet_lille.jpg', overskrift: 'Verdensballetten 2019', producttext: 'Siden 2012 har de klassiske gule mure på Møllerup Gods dannet rammen for Verdensballetten, og med mange tusinde gæster gennem årene er begivenheden efterhånden blevet en fasttømret og populær sommertradition på Djursland. Også til sommer 2019 vil vi få fornøjelsen af forestillingen på Møllerup Gods. ', id: 2},
-        {nyhed: 'cover_nyhed_historie.jpg', overskrift:'Historien om Møllerup Gods ', producttext: 'Marsk Stig Andersen Hvide af den magtfulde Hvide-slægt er den tidligst kendte ejer af Møllerup. Møllerup var hans vigtigste besiddelse. Gården lå, som i dag, med en borg på øen og avlsbygninger på den anden side af voldgraven', id: 3}
+        {nyhed: 'cover_nyhed_hampeprodukter.jpg', overskrift: 'Køb vores hampeprodukter', producttext: 'På Møllerup Gods arbejder vi med hamp og hampens unikke ernæringsmæssige egenskaber. Alt vores hamp er dyrket i Danmark, og resultatet er en række gode produkter, som kan købe her på webshoppen.', link: 'Køb online her', id: 1},
+        {nyhed: 'cover_nyhed_verdensballet_lille.jpg', overskrift: 'Verdensballetten 2019', producttext: 'Siden 2012 har de klassiske gule mure på Møllerup Gods dannet rammen for Verdensballetten, og med mange tusinde gæster gennem årene er begivenheden efterhånden blevet en fasttømret og populær sommertradition på Djursland. Også til sommer 2019 vil vi få fornøjelsen af forestillingen på Møllerup Gods. ', link: 'Se mere her', id: 2},
+        {nyhed: 'cover_nyhed_historie.jpg', overskrift:'Historien om Møllerup Gods ', producttext: 'Marsk Stig Andersen Hvide af den magtfulde Hvide-slægt er den tidligst kendte ejer af Møllerup. Møllerup var hans vigtigste besiddelse. Gården lå, som i dag, med en borg på øen og avlsbygninger på den anden side af voldgraven', link: 'Læs historien her', id: 3}
        
     ]);
 
@@ -22,6 +23,7 @@ const NyhederLille = () => {
                                 <img className="img-fluid" src={"/img/" + n.nyhed} alt="sko"/>
                                 <h4>{n.overskrift}</h4>
                                 <p> {n.producttext} </p>
+                                <NavLink className="text-danger" to="#"> {n.link} </NavLink>
                             </div>
                          );
                     })}

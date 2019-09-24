@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HeleHistorien = () => {
+const KontaktOs = () => {
     return ( 
         <div className="container">
-            <h1>Hele Historien</h1>
+            <h1>Kontakt Os</h1>
         </div>
      );
 }
  
-export default HeleHistorien;
+export default KontaktOs;
