@@ -26,6 +26,7 @@ import Webshop from './components/Webshop';
 import Kontakt_os from './components/KontaktOs';
 import Hvad_siger_vores_gaester from './components/HvadSigerVoresGaester';
 import Nyheder from './components/News';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -73,8 +74,11 @@ function App() {
 
         <Route path="/kontakt_os" component={Kontakt_os} />
         <Route path="/webshop" component={Webshop} />
+        
       </main>
+      <Footer />
     </BrowserRouter>
+
   );
 }
 
