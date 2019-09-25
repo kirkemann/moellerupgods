@@ -6,7 +6,7 @@ const Instagram = () => {
         
             
                 <div className="col-12 col-lg-9 mt-4">
-                <InstagramEmbed url='https://www.instagram.com/p/BUZDt1Ilwc8/?utm_source=ig_embed'
+                <InstagramEmbed url='https://www.instagram.com/p/B2rmhzihaua/'
         maxWidth={600}
         hideCaption={true}
         containerTagName='div'
