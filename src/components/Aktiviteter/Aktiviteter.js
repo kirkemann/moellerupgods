@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {NavLink} from 'react-router-dom';
+
+import Akt from './Akt';
 
 const Aktiviteter = () => {
 
@@ -21,21 +22,17 @@ const Aktiviteter = () => {
     ]);
 
     return ( 
-        
+       
                 
                 <div className="aktiviteter-list pt-5 ">
+                <Akt n={aktivite.find(n => n.id === 6)} />
                 <h5>Møllerup Gods tilbyder en perlerække af muligheder</h5>
                 <p>Møllerup Gods og Hubertus Kroen er ikke alene kulturhistoriske perler, vi er også en virksomhed med højt til loftet, masser af muligheder og god plads til aktiviteter på 425 hektar - for private og erhverv</p>
                     <div className="col-12">
                         <div className="row">
                     {aktivite.map(n => {
                         return ( 
-                            <div key={n.id} className="col-12 col-lg-4 col-md-6 mb-3">
-                                <img className="img-fluid w-100" src={"/img/" + n.aktiv} alt="aktivite"/>
-                                <h4>{n.overskrift}</h4>
-                                <p> {n.producttext} </p>
-                                <NavLink className="text-danger" to="#"> {n.link} </NavLink>
-                            </div>
+                           <Akt n={n} />
                          );
                     })}
                     </div>
